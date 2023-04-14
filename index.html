@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Meal Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Search for a delicious meal</h1>
+        <div class="input__container">
+          <input type="text" placeholder="enter the meal name here!" />
+          <button class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="random" title="get a random meal">
+            <i class="fa-solid fa-shuffle"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="meals__container"></div>
+      <div class="modal__overlay"></div>
+    </div>
+  </body>
+</html>
