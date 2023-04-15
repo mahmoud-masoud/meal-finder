@@ -35,7 +35,7 @@ function createMeals(mealsData) {
 async function showMeal() {
   const mealsData = await getMeal(input.value);
   createMeals(mealsData);
-  mealsContainer.classList.remove('random__meal__container');
+  mealsContainer.classList.remove('random__recipe__container');
 }
 
 async function mealDetails(id) {
@@ -117,7 +117,7 @@ async function showRandomMeal() {
     `;
   randomMealElm.append(wrapper);
   mealsContainer.append(randomMealElm);
-  mealsContainer.classList.add('random__meal__container');
+  mealsContainer.classList.add('random__recipe__container');
 }
 
 searchBtn.addEventListener('click', showMeal);
