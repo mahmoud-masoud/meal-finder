@@ -16,8 +16,7 @@ button {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to top right, #673300, #d48a00);
-  background: url('bg.jpg');
+  background: url('bg.jpg'), linear-gradient(to top right, #673300, #d48a00);
   background-size: cover;
   background-position: center;
   color: #fff;
