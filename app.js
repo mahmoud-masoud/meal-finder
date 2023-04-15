@@ -7,8 +7,6 @@ const modalOverlay = document.querySelector('.modal__overlay');
 const API_KEY = '366ad20a87354522acbe141c1fc4a381';
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-const test = document.querySelector('.test');
-
 async function getMeal(term) {
   const res = await fetch(
     `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&query=${term}`
@@ -129,7 +127,7 @@ randomBtn.addEventListener('click', showRandomMeal);
 document.body.addEventListener('click', showModal);
 
 modalOverlay.addEventListener('click', (e) => {
-  if (e.target.classList.contains('fa-x')) {
+  if (e.target.classList.contains('close__modal')) {
     modalOverlay.style.display = 'none';
   }
 });
